@@ -34,7 +34,7 @@ public class Task {
     @Override
     public String toString() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        return "[" + (completed ? "X" : " ") + "] " + description + " (Due: " + dateFormat.format(dueDate) + ")";
+        return "[" + (completed ? "completed" : "not completed") + "] " + description + " (Due: " + dateFormat.format(dueDate) + ")";
 
     }
     
